@@ -1,0 +1,47 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+/.vscode
+/.idea
+/.phpunit.cache
+/.phpunit.result.cache
+/.fleet
+/.zed
+.phpactor.json
+
+# Environment files (never commit secrets)
+.env
+.env.*
+!.env.example
+auth.json
+
+# Composer
+/vendor
+composer.phar
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# Laravel storage
+/storage/*.key
+/storage/logs
+/storage/framework/sessions
+/storage/framework/views
+/storage/framework/cache
+/storage/framework/testing
+/storage/pail
+
+# Your uploaded files (anexos)
+storage/app/relatos/*
+!storage/app/relatos/.gitignore
+
+# Public folders
+/public/storage
+/public/hot
+/public/build
+
+# Homestead defaults
+Homestead.yaml
+Homestead.json
