@@ -35,7 +35,6 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader
 
 # Laravel commands
-RUN php artisan key:generate
 RUN php artisan storage:link || true
 
 CMD php artisan serve --host 0.0.0.0 --port 8000
