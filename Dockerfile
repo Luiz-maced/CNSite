@@ -56,9 +56,4 @@ RUN mkdir -p /app/storage/framework/cache/data && \
     mkdir -p /app/storage/logs && \
     chmod -R 777 /app/storage
 
-# ============================================
-# Expose port and start Laravel
-# ============================================
-EXPOSE 8000
-
-CMD php artisan serve --host 0.0.0.0 --port 8000
+CMD php artisan serve --host 0.0.0.0 --port ${PORT}
