@@ -65,4 +65,6 @@ RUN mkdir -p /app/storage/framework/cache/data && \
 # ============================================
 # Start Laravel
 # ============================================
+RUN php artisan migrate --force || true
+
 CMD php artisan serve --host 0.0.0.0 --port ${PORT}
